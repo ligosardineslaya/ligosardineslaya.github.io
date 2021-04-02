@@ -1,0 +1,396 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Products - Ligo Sardines Philippines Official Website</title>
+		<link rel="icon" href="../IMG/ligo-icon.png" type="image/x-icon">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<style>
+			.container-h {
+  				position: relative;
+  				width: 50%;
+			}
+			.image-h {
+  				opacity: 1;
+  				display: block;
+  				backface-visibility: hidden;
+			}
+			.middle-h {
+			  	transition: .5s ease;
+			  	opacity: 0;
+			  	position: absolute;
+			  	top: 50%;
+			  	left: 50%;
+			  	transform: translate(-50%, -50%);
+			  	-ms-transform: translate(-50%, -50%);
+			  	text-align: center;
+			}
+
+			.container-h:hover .image-h {
+				opacity: 0.3;
+			}
+
+			.container-h:hover .middle-h {
+			  	opacity: 1;
+			}
+
+			.text-h {
+				background-color: #00FF66;
+			  	color: white;
+			  	font-size: 16px;
+			  	padding: 16px 32px;
+			}
+		</style>
+	</head>
+	<body>
+		<section id="navigation">
+			<div class="container">
+				<nav id="navbar-id" class="navbar navbar-expand-lg fixed-top" style="background-color:rgba(0,0,0,0.2)">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#">
+							<img src="../IMG/ligo-logo.png" class="img-fluid" alt="logo">
+						</a>
+						<button class="navbar-toggler" type="button" style="border-color:#666666" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon" style="background-image:url(../IMG/nav-icon.png);"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbar-content">
+							<ul class="navbar-nav nav nav-pills w-100">
+								<li class="nav-item">
+									<a class="nav-link" aria-current="page" href="index.html">
+										<button type="button" class="btn btn-success btn-round">
+											<i class="fa fa-home fa-2x"> HOME</i>
+										</button>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="about.html">
+										<button type="button" class="btn btn-success btn-round">
+												<i class="fa fa fa-info-circle fa-2x"> ABOUT</i>
+										</button>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="products.html">
+										<button type="button" class="btn disabled btn-success btn-round">
+											<i class="fa fa-shopping-bag fa-2x"> PRODUCTS</i>
+										</button>
+									</a>
+								</li>
+							</ul>
+							<ul class="navbar-nav nav nav-pills w-100" style="justify-content: flex-end">
+								<li class="nav-item">
+									<a class="nav-link" onClick = "window.open('https://www.facebook.com/ligo.philippines/',  '_blank' )">
+										<button class="btn btn-success fa fa-facebook fa-3x"></button>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" onClick = "window.open('https://www.instagram.com/ligosardinesph/',  '_blank' )">
+										<button class="btn btn-success fa fa-instagram fa-3x"></button>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" onClick = "window.open('https://www.youtube.com/channel/UCm9L_kSkp6CRpAqxHR6Opqw',  '_blank' )">
+										<button class="btn btn-success fa fa-youtube-play fa-3x"></button>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" onClick = "window.open('https://twitter.com/ligosardinesph',  '_blank' )">
+										<button class="btn btn-success fa fa-twitter fa-3x"></button>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</section>
+		<section id="banner" class="bg-image" style="padding: 15em 0;background-image:url(../IMG/ligo-banner3.jpg);background-repeat:no-repeat;background-size:cover;height:600px">
+		</section>
+		<section id="content"  style="padding: 2em 0;background-image:url(../IMG/ligo-background.png);background-size:contain">
+			<div class="container" style="height:400px">
+				<div id="carousel-id" class="carousel slide carousel-fade" data-bs-ride="carousel" style="background-color:rgba(0,0,0,1)">
+  					<div class="carousel-indicators">
+    					<button type="button" data-bs-target="#carousel-id" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    					<button type="button" data-bs-target="#carousel-id" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    					<button type="button" data-bs-target="#carousel-id" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  					</div>
+  					<div class="carousel-inner">
+    					<div class="carousel-item active">
+      						<img src="../IMG/ligo-slide-prod1.jpg" class="d-block w-100" alt="First slide">
+    					</div>
+    					<div class="carousel-item">
+      						<img src="../IMG/ligo-slide-prod2.jpg" class="d-block w-100" alt="Second slide">
+    					</div>
+						<div class="carousel-item">
+							<img src="../IMG/ligo-slide-prod3.jpg" class="d-block w-100" alt="Third slide">
+						</div>
+  					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carousel-id" data-bs-slide="prev">
+    					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    					<span class="visually-hidden">Previous</span>
+  					</button>
+  					<button class="carousel-control-next" type="button" data-bs-target="#carousel-id" data-bs-slide="next">
+    					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    					<span class="visually-hidden">Next</span>
+  					</button>
+				</div>
+			</div>
+			<div style="height:500px">
+			</div>
+			<div class="container" style="height:250px">
+				<h1 class="text-center" style="color:#66FF00"><b>PRODUCTS</b></h1>
+				<hr>
+			</div>
+			<div style="height:500px">
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col container-h" style="height:400px">
+						<img id="prod-1" class="image-h" src="../IMG/ligo-prod1.jpg" style="height:400px;width:400px;object-fit:fill" alt="product-1">
+						<div class="middle-h">
+    						<div class="text-h">Ligo Sardines in Tomato Sauce</div>
+  						</div>
+					</div>
+					<div class="col container-h" style="height:400px">
+						<img id="prod-2" class="image-h" src="../IMG/ligo-prod2.jpg" style="height:400px;width:400px;object-fit:fill" alt="product-2">
+						<div class="middle-h">
+    						<div class="text-h">Ligo Sardines in Tomato Sauce Chili Added</div>
+  						</div>
+					</div>
+					<div class="col container-h" style="height:400px">
+						<img id="prod-3" class="image-h" src="../IMG/ligo-prod3.jpg" style="height:400px;width:400px;object-fit:fill" alt="product-3">
+						<div class="middle-h">
+    						<div class="text-h">Ligo Premium Sardines in Tomato Sauce</div>
+  						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row mt-5">
+					<div class="col container-h" style="height:400px">
+						<img id="prod-4" class="image-h" src="../IMG/ligo-prod4.jpg" style="height:400px;width:400px;object-fit:fill" alt="product-4">
+						<div class="middle-h">
+    						<div class="text-h">Ligo Premium Sardines in Tomato Sauce Chili Added</div>
+  						</div>
+					</div>
+					<div class="col container-h" style="height:400px">
+						<img id="prod-5" class="image-h" src="../IMG/ligo-prod5.jpg" style="height:400px;width:400px;object-fit:fill" alt="product-5">
+						<div class="middle-h">
+    						<div class="text-h">Ligo Sardines with Calamansi</div>
+  						</div>
+					</div>
+					<div class="col container-h" style="height:400px">
+						<img id="prod-6" class="image-h" src="../IMG/ligo-prod6.jpg" style="height:400px;width:400px;object-fit:fill" alt="product-6">
+						<div class="middle-h">
+    						<div class="text-h">Ligo Sardines Tuyo Style</div>
+  						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row mt-5">
+					<div class="col container-h" style="height:400px">
+						<img id="prod-7" class="image-h" src="../IMG/ligo-prod7.jpg" style="height:400px;width:400px;object-fit:fill" alt="product-7">
+						<div class="middle-h">
+    						<div class="text-h">Ligo Sardines with Sriracha</div>
+  						</div>
+					</div>
+					<div class="col container-h" style="height:400px">
+						<img id="prod-8" class="image-h" src="../IMG/ligo-prod8.jpg" style="height:400px;width:400px;object-fit:fill" alt="product-8">
+						<div class="middle-h">
+    						<div class="text-h">Ligo Sardines Spanish Style</div>
+  						</div>
+					</div>
+					<div class="col container-h" style="height:400px">
+						<img id="prod-9" class="image-h" src="../IMG/ligo-prod9.jpg" style="height:400px;width:400px;object-fit:fill" alt="product-9">
+						<div class="middle-h">
+    						<div class="text-h">Ligo Fried Sardines in Portuguese Style</div>
+  						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row mt-5">
+					<div class="col container-h" style="height:400px">
+						<img id="prod-10" class="image-h" src="../IMG/ligo-prod10.jpg" style="height:400px;width:400px;object-fit:fill" alt="product-10">
+						<div class="middle-h">
+    						<div class="text-h">Ligo Sardines in Oyster Sauce</div>
+  						</div>
+					</div>
+					<div class="col container-h" style="height:400px">
+						<img id="prod-11" class="image-h" src="../IMG/ligo-prod11.jpg" style="height:400px;width:400px;object-fit:fill" alt="product-11">
+						<div class="middle-h">
+    						<div class="text-h">Ligo Sardines Extra Hot</div>
+  						</div>
+					</div>
+					<div class="col container-h" style="height:400px">
+						<img id="prod-12" class="image-h" src="../IMG/ligo-prod12.jpg" style="height:400px;width:400px;object-fit:fill" alt="product-12">
+						<div class="middle-h">
+    						<div class="text-h">Ligo Sardines Gata Style</div>
+  						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid mt-5" style="height:500px">
+				<div class="container">
+					<h2 id="acc-id" class="text-center" style="color:#00FF00;margin-bottom: 1em"><b>Accreditations</b></h2>
+					<div class="row">
+						<div class="col" style="height:150px;width:150px">
+							<img id="acc-1" src="../IMG/acc-1.png" style="height:150px;width:150px" alt="accreditation1">
+						</div>
+						<div class="col" style="height:150px;width:150px">
+							<img id="acc-2" src="../IMG/acc-2.png" style="height:150px;width:150px" alt="accreditation2">
+						</div>
+						<div class="col" style="height:150px;width:150px">
+							<img id="acc-3" src="../IMG/acc-3.png" style="height:150px;width:150px" alt="accreditation3">
+						</div>
+						<div class="col" style="height:150px;width:150px">
+							<img id="acc-4" src="../IMG/acc-4.png" style="height:150px;width:150px" alt="accreditation4">
+						</div>
+						<div class="col" style="height:150px;width:150px">
+							<img id="acc-5" src="../IMG/acc-5.png" style="height:150px;width:150px" alt="accreditation5">
+						</div>
+						<div class="col" style="height:150px;width:150px">
+							<img id="acc-6" src="../IMG/acc-6.png" style="height:150px;width:150px" alt="accreditation6">
+						</div>
+						<div class="col" style="height:150px;width:150px">
+							<img id="acc-7" src="../IMG/acc-7.png" style="height:150px;width:150px" alt="accreditation7">
+						</div>				
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer id="footer" class="bg-dark mt-5 py-5">
+			<div class="row">
+				<div class="col ms-5">
+					<img src="../IMG/ligo-logo.png" class="img-fluid" alt="logo">
+				</div>
+				<div class="col">
+					<div class="row mt-2">
+						<div class="col">
+							<h6 style="color:#FFFFFF"><b>Main Office Address</b></h6>
+							<h6 style="color:#FFFFFF">
+								#19 Golden Road Caloocan Industrial Subd.,<br>
+								Kaybiga, Caloocan City, Metro Manila, PH
+							</h6>
+						</div>
+					</div>
+					<div class="row mt-2">
+						<div class="col">
+							<h6 style="color:#FFFFFF"><b>Telephone:</b></h6>
+							<h6 style="color:#FFFFFF">
+								Sales: 632-8703-8238<br>
+								Admin: 632-8986-1882<br>
+								Trunkline 632-8938-8918/632-8937-4366/632-8282-8330
+							</h6>
+						</div>
+					</div>
+					<div class="row mt-2">
+						<div class="col">
+							<h6 style="color:#FFFFFF">
+								©1954-2020 by A. Tung Chingco Manufacturing Corporation
+							</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="row mt-2">
+						<div class="col">
+							<a type="button" class="btn btn-outline-success btn-round" href="index.html">HOME</a>
+						</div>
+					</div>
+					<div class="row mt-2">
+						<div class="col">
+							<a class="btn btn-outline-success btn-round" href="about.html">ABOUT</a>
+						</div>
+					</div>
+					<div class="row mt-2">
+						<div class="col">
+							<a class="btn disabled btn-outline-success btn-round" href="products.html">PRODUCTS</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<h4 style="color:#FFFFFF">Follow Us</h4>
+					<button class="btn btn-success fa fa-facebook fa-3x" onClick = "window.open('https://www.facebook.com/ligo.philippines/',  '_blank' )"></button>
+					<button class="btn btn-success fa fa-instagram fa-3x" onClick = "window.open('https://www.instagram.com/ligosardinesph/',  '_blank' )"></button>
+					<button class="btn btn-success fa fa-youtube-play fa-3x" onClick = "window.open('https://www.youtube.com/channel/UCm9L_kSkp6CRpAqxHR6Opqw',  '_blank' )"></button>
+					<button class="btn btn-success fa fa-twitter fa-3x" onClick = "window.open('https://twitter.com/ligosardinesph',  '_blank' )"></button>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript">
+			$(window).scroll(function() {
+  				var scrollTop = $(this).scrollTop();
+				var windowHeight = $(window).height();
+				var alpha = ((1 - (windowHeight - scrollTop) / windowHeight * 0.8) + 0.2);
+				var scrollPer = ((1 - (windowHeight - scrollTop) / windowHeight));
+				var scrollPer2 = ((scrollTop - windowHeight) / windowHeight);
+				$('#navbar-id').css('background', 'rgba(0, 0, 0,' + alpha + ')');
+				if (scrollPer < 0.5) {
+        			$('#carousel-id').fadeIn();
+    			} else {
+        			$('#carousel-id').fadeOut();
+    			}
+				if (scrollPer > 0.7) {
+        			$('#prod-1').fadeIn(1500);
+					$('#prod-2').fadeIn(1500);
+					$('#prod-3').fadeIn(1500);
+    			} else if (scrollPer < 0.3) {
+        			$('#prod-1').fadeOut(0);
+					$('#prod-2').fadeOut(0);
+					$('#prod-3').fadeOut(0);
+    			}
+				if (scrollPer > 0.8) {
+        			$('#prod-4').fadeIn(1500);
+					$('#prod-5').fadeIn(1500);
+					$('#prod-6').fadeIn(1500);
+    			} else if (scrollPer < 0.3) {
+        			$('#prod-4').fadeOut(0);
+					$('#prod-5').fadeOut(0);
+					$('#prod-6').fadeOut(0);
+    			}
+				if (scrollPer > 0.9) {
+        			$('#prod-7').fadeIn(1500);
+					$('#prod-8').fadeIn(1500);
+					$('#prod-9').fadeIn(1500);
+    			} else if (scrollPer < 0.3) {
+        			$('#prod-7').fadeOut(0);
+					$('#prod-8').fadeOut(0);
+					$('#prod-9').fadeOut(0);
+    			}
+				if (scrollPer > 1) {
+        			$('#prod-10').fadeIn(1500);
+					$('#prod-11').fadeIn(1500);
+					$('#prod-12').fadeIn(1500);
+    			} else if (scrollPer < 0.3) {
+        			$('#prod-10').fadeOut(0);
+					$('#prod-11').fadeOut(0);
+					$('#prod-12').fadeOut(0);
+    			}
+				if (scrollPer2 > 1) {
+        			$('#acc-id').fadeIn(200);
+					$('#acc-1').fadeIn(300);
+					$('#acc-2').fadeIn(400);
+					$('#acc-3').fadeIn(500);
+					$('#acc-4').fadeIn(600);
+					$('#acc-5').fadeIn(700);
+					$('#acc-6').fadeIn(800);
+					$('#acc-7').fadeIn(900);
+    			} else if (scrollPer < 0.3) {
+        			$('#acc-id').fadeOut();
+					$('#acc-1').fadeOut();
+					$('#acc-2').fadeOut();
+					$('#acc-3').fadeOut();
+					$('#acc-4').fadeOut();
+					$('#acc-5').fadeOut();
+					$('#acc-6').fadeOut();
+					$('#acc-7').fadeOut();
+    			}
+			});
+		</script> 
+	</body>
+</html>
